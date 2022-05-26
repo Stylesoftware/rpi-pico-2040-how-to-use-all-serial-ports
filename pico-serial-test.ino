@@ -1,3 +1,5 @@
+// Use all serial ports on the Pico
+
 SerialPIO ser3(2,3);
 SerialPIO ser4(4,5);
 SerialPIO ser5(6,7);
