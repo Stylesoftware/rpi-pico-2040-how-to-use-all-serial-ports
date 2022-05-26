@@ -1,7 +1,7 @@
 # rpi-pico-all-serial-ports
 How to get Serial1, Serial2 and SerialPIO functioning, to get the maximum number of serial ports working for the Pico.
 
-# Instructions
+### Instructions
 Using Earle Philhowers excellent port of the arduino mbed for all rp2040 devices [here](https://learn.adafruit.com/rp2040-arduino-with-the-earlephilhower-core/installing-the-earlephilhower-core), you won't need to get into PIO programming directly, and can instead use the SerialPIO functions to gain more serial ports.
 
 # The problem
