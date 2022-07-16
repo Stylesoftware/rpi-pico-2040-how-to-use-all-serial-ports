@@ -5,8 +5,11 @@ How to get Serial1, Serial2 and SerialPIO functioning, getting the maximum numbe
 Using Earle Philhowers excellent port of the arduino mbed for all rp2040 devices [here](https://learn.adafruit.com/rp2040-arduino-with-the-earlephilhower-core/installing-the-earlephilhower-core), you won't need to get into PIO programming directly and can instead use the SerialPIO function in the Arduino IDE to gain more serial ports.
 
 ### Serial Port Pinouts in this sketch
+I wished to retain usage of USB, but it might be possible to share it with other pins, I opted not to do so.
+
 | TX | RX | Type | Function |
 | --- | --- | --- | --- |
+| USB | USB | Serial | Serial.begin(115200); |
 | 0 | 1 | Serial | Serial1.begin(115200); |
 | 2 | 3 | PIO | SerialPIO ser3(2,3); |
 | 4 | 5 | PIO | SerialPIO ser4(4,5); |
