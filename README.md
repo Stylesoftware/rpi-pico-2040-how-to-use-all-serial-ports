@@ -1,4 +1,4 @@
-# rpi-pico-2040-how-to-use-all-serial-ports
+# RPi Pico 2040 How to use all serial ports (The Maximum!)
 How to get Serial1, Serial2 and SerialPIO functioning, getting the maximum number of serial ports working on the Pico.
 
 ### Instructions
