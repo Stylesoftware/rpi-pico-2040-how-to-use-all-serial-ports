@@ -5,8 +5,6 @@ How to get Serial1, Serial2 and SerialPIO functioning, getting the maximum numbe
 Using Earle Philhowers excellent port of the arduino mbed for all rp2040 devices [here](https://learn.adafruit.com/rp2040-arduino-with-the-earlephilhower-core/installing-the-earlephilhower-core), you won't need to get into PIO programming directly and can instead use the SerialPIO function in the Arduino IDE to gain more serial ports.
 
 ### Serial Port Pinouts in this sketch
-I wished to retain usage of USB, but it might be possible to share it with other pins, I opted not to do so.
-
 | TX | RX | Type | Function |
 | --- | --- | --- | --- |
 | USB | USB | Serial | Serial.begin(115200); |
@@ -16,6 +14,7 @@ I wished to retain usage of USB, but it might be possible to share it with other
 | 6 | 7 | PIO | SerialPIO ser5(6,7); |
 | 8 | 9 | Serial | Serial2.begin(115200); |
 | 10 | 11 | PIO | SerialPIO ser6(10,11); |
+I wished to retain reliable usage of USB, but it might be possible to share it with other pins, I opted not to do so.
 
 ### The problem
 I found it problematic to get Serial1 & Serial2 working, using the wrong pins, the pico fails to boot.
