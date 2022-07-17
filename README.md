@@ -14,6 +14,7 @@ Using Earle Philhowers excellent port of the arduino mbed for all rp2040 devices
 | 6 | 7 | PIO | SerialPIO ser5(6,7); |
 | 8 | 9 | Serial | Serial2.begin(115200); |
 | 10 | 11 | PIO | SerialPIO ser6(10,11); |
+
 I wished to retain reliable usage of USB, but it might be possible to share it with other pins, I opted not to do so.
 
 ### The problem
