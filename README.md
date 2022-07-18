@@ -30,5 +30,4 @@ You can instead have 8 TX or 8 RX or any combination up to 8 wires.
 In pin order, the sketch uses Serial1 (0,1) SerialPIO (2,3 4,5 6,7) Serial2 (8,9) SerialPIO (10,11) to give a total of 6 serial ports without interfering with the USB port.
 
 ### Arduino IDE compile/upload problems
-Randomly it fails to upload. To fix: Unplug the pico, hold down the button, plug in the pico, wait a second and let go of the button.
-Your compile/upload will now work.
+Your sketch may randomly fail to upload. To fix, put the Pico in to Programming mode: Unplug the pico, hold down the button, plug in the pico, wait a second and let go of the button, then click Upload.
